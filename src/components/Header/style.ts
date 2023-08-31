@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   height: 96px;
-  border: 1px solid redops;
+  font-size: 16px;
 
   nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
   }
 `
@@ -29,15 +30,5 @@ export const HeaderOptions = styled.ul`
 
     list-style: none;
     font-weight: 500;
-
-    position: relative;
   }
-`
-
-export const SignUp = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 24px;
-
-  font-weight: 500;
 `

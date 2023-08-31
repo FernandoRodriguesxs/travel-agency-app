@@ -1,4 +1,5 @@
-import { HeaderContainer, LogoBox, HeaderOptions, SignUp } from './style'
+import { HeaderContainer, LogoBox, HeaderOptions } from './style'
+import { ButtonSignUp } from '../Button'
 
 export const Header = () => {
   return (
@@ -14,9 +15,7 @@ export const Header = () => {
           <li>BLOG</li>
           <li>CONTACT US</li>
         </HeaderOptions>
-        <SignUp>
-          <div>Sign Up</div>
-        </SignUp>
+        <ButtonSignUp>SIGN UP</ButtonSignUp>
       </nav>
     </HeaderContainer>
   )
