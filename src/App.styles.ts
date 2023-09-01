@@ -40,3 +40,34 @@ export const Wrapper = styled.div`
   padding: 24px;
   margin: 0 auto;
 `
+export const AboutSection = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 48px;
+
+  .about-left {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    img {
+      height: 350px;
+    }
+  }
+  .about-right {
+    display: flex;
+    justify-content: center;
+    img {
+      height: 620px;
+    }
+  }
+`
