@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
 `
 export const AboutSection = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 48px;
 
   .about-left {
@@ -65,9 +65,33 @@ export const AboutSection = styled.div`
   }
   .about-right {
     display: flex;
-    justify-content: center;
+
     img {
+      margin-top: 6px;
       height: 620px;
+      width: 460px;
+    }
+  }
+`
+export const TitleColumn = styled.section`
+  display: flex;
+  font-size: 24px;
+  font-weight: 300;
+`
+
+export const CardOutdoor = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 24px;
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    picture img {
+      height: 350px;
     }
   }
 `

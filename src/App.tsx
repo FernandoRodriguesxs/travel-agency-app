@@ -1,8 +1,15 @@
 import { Header } from './components/Header'
-import { Wrapper, Hero, AboutSection } from './App.styles'
+import {
+  Wrapper,
+  Hero,
+  AboutSection,
+  CardOutdoor,
+  TitleColumn,
+} from './App.styles'
 import { ButtonLearnMore } from './components/Button'
 import imgLeft from './assets/about-left.jpg'
 import imgRight from './assets/about-right.jpg'
+import Card1 from './assets/card-1.jpg'
 
 export const App = () => {
   return (
@@ -56,6 +63,59 @@ export const App = () => {
             </picture>
           </div>
         </AboutSection>
+      </Wrapper>
+      <Wrapper>
+        <TitleColumn>
+          <h2>Thiland Outdoor Destination</h2>
+        </TitleColumn>
+      </Wrapper>
+      <Wrapper>
+        <CardOutdoor>
+          <div className="card">
+            <picture>
+              <img src={Card1} alt="" />
+            </picture>
+            <h2>CHIANG MAI</h2>
+            <p>
+              Chiang Mai Is A Vibrant City That Offers <br />
+              A Unique Blend Of Ancient Culture And <br />
+              Modern Amenities
+            </p>
+          </div>
+          <div className="card">
+            <picture>
+              <img src={Card1} alt="" />
+            </picture>
+            <h2>CHIANG MAI</h2>
+            <p>
+              Chiang Mai Is A Vibrant City That Offers <br />
+              A Unique Blend Of Ancient Culture And <br />
+              Modern Amenities
+            </p>
+          </div>
+          <div className="card">
+            <picture>
+              <img src={Card1} alt="" />
+            </picture>
+            <h2>CHIANG MAI</h2>
+            <p>
+              Chiang Mai Is A Vibrant City That Offers <br />
+              A Unique Blend Of Ancient Culture And <br />
+              Modern Amenities
+            </p>
+          </div>
+          <div className="card">
+            <picture>
+              <img src={Card1} alt="" />
+            </picture>
+            <h2>CHIANG MAI</h2>
+            <p>
+              Chiang Mai Is A Vibrant City That Offers <br />
+              A Unique Blend Of Ancient Culture And <br />
+              Modern Amenities
+            </p>
+          </div>
+        </CardOutdoor>
       </Wrapper>
     </>
   )
