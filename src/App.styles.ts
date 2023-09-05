@@ -75,8 +75,11 @@ export const AboutSection = styled.div`
 `
 export const TitleColumn = styled.section`
   display: flex;
-  font-size: 24px;
-  font-weight: 300;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 300;
+  }
 `
 
 export const CardOutdoor = styled.div`
@@ -93,5 +96,29 @@ export const CardOutdoor = styled.div`
     picture img {
       height: 350px;
     }
+  }
+`
+export const ResortText = styled.section`
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  .arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+`
+export const ResortCards = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  picture img {
+    width: 400px;
   }
 `

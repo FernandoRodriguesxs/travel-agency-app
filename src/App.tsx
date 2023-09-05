@@ -5,11 +5,15 @@ import {
   AboutSection,
   CardOutdoor,
   TitleColumn,
+  ResortText,
+  ResortCards,
 } from './App.styles'
 import { ButtonLearnMore } from './components/Button'
 import imgLeft from './assets/about-left.jpg'
 import imgRight from './assets/about-right.jpg'
 import Card1 from './assets/card-1.jpg'
+import ResortImg from './assets/resort1.jpg'
+import { ArrowRight, ArrowLeft } from '@phosphor-icons/react'
 
 export const App = () => {
   return (
@@ -116,6 +120,28 @@ export const App = () => {
             </p>
           </div>
         </CardOutdoor>
+      </Wrapper>
+      <Wrapper>
+        <ResortText>
+          <h2>Top 10 Resorts</h2>
+          <div className="arrows">
+            <ArrowLeft size={32} color="#000000" />
+            <ArrowRight size={32} color="#000000" />
+          </div>
+        </ResortText>
+      </Wrapper>
+      <Wrapper>
+        <ResortCards>
+          <picture>
+            <img src={ResortImg} alt="" />
+          </picture>
+          <picture>
+            <img src={ResortImg} alt="" />
+          </picture>
+          <picture>
+            <img src={ResortImg} alt="" />
+          </picture>
+        </ResortCards>
       </Wrapper>
     </>
   )
