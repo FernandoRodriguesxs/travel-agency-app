@@ -110,6 +110,7 @@ export const ResortText = styled.section`
   .arrows {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
     align-items: center;
   }
 `
@@ -118,7 +119,23 @@ export const ResortCards = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  margin-bottom: 96px;
+
   picture img {
     width: 400px;
+  }
+`
+
+export const HotelCards = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  .cards-hotel {
+    picture img {
+      width: 550px;
+    }
+    h3 {
+      gap: 24px;
+    }
   }
 `

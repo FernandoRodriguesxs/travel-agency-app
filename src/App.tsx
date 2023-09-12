@@ -7,12 +7,14 @@ import {
   TitleColumn,
   ResortText,
   ResortCards,
+  HotelCards,
 } from './App.styles'
 import { ButtonLearnMore } from './components/Button'
 import imgLeft from './assets/about-left.jpg'
 import imgRight from './assets/about-right.jpg'
 import Card1 from './assets/card-1.jpg'
 import ResortImg from './assets/resort1.jpg'
+import HotelImg from './assets/resort-1.jpg'
 import { ArrowRight, ArrowLeft } from '@phosphor-icons/react'
 
 export const App = () => {
@@ -142,6 +144,41 @@ export const App = () => {
             <img src={ResortImg} alt="" />
           </picture>
         </ResortCards>
+      </Wrapper>
+      <Wrapper>
+        <TitleColumn>
+          <h2>Our Latest Blog</h2>
+        </TitleColumn>
+      </Wrapper>
+      <Wrapper>
+        <HotelCards>
+          <div className="cards-hotel">
+            <picture>
+              <img src={HotelImg} alt="" />
+            </picture>
+            <h3>Discovering The Best Street Food In Bangkok</h3>
+            <p>
+              This Blog Post Could Explore The Rich And Diverse Street Food
+              Scene In The Capital
+              <br />
+              City Of Thailand
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div className="cards-hotel">
+            <picture>
+              <img src={HotelImg} alt="" />
+            </picture>
+            <h3>Discovering The Best Street Food In Bangkok</h3>
+            <p>
+              This Blog Post Could Explore The Rich And Diverse Street Food
+              Scene In The Capital
+              <br />
+              City Of Thailand
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </HotelCards>
       </Wrapper>
     </>
   )
