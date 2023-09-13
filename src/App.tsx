@@ -8,6 +8,7 @@ import {
   ResortText,
   ResortCards,
   HotelCards,
+  SubscribeSection,
 } from './App.styles'
 import { ButtonLearnMore } from './components/Button'
 import imgLeft from './assets/about-left.jpg'
@@ -180,6 +181,15 @@ export const App = () => {
           </div>
         </HotelCards>
       </Wrapper>
+      <SubscribeSection>
+        <div className="text-sub">
+          <h3>Subscribe Today To Get Latest Updates !</h3>
+        </div>
+        <div className="newsletter">
+          <input type="text" placeholder="Email" />
+          <button>SUBSCRIBE</button>
+        </div>
+      </SubscribeSection>
     </>
   )
 }

@@ -139,3 +139,53 @@ export const HotelCards = styled.div`
     }
   }
 `
+
+export const SubscribeSection = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  height: 400px;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../src/assets/balao2.jpg') no-repeat;
+  background-size: cover;
+
+  margin-top: 96px;
+
+  .text-sub {
+    color: ${({ theme }) => theme.colors.white};
+
+    h3 {
+      font-size: 48px;
+      font-weight: 300;
+    }
+  }
+
+  .newsletter {
+    display: flex;
+    width: 900px;
+
+    input {
+      display: flex;
+      align-items: center;
+
+      height: 48px;
+      width: 700px;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: ${({ theme }) => theme.colors.white};
+      color: black;
+
+      border: none;
+
+      width: 200px;
+    }
+  }
+`
