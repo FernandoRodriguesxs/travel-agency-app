@@ -73,7 +73,7 @@ export const App = () => {
       </Wrapper>
       <Wrapper>
         <TitleColumn>
-          <h2>Thiland Outdoor Destination</h2>
+          <h2>Thailand Outdoor Destination</h2>
         </TitleColumn>
       </Wrapper>
       <Wrapper>

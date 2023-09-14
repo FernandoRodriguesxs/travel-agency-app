@@ -6,7 +6,6 @@ export const Hero = styled.div`
   align-items: center;
 
   height: 100vh;
-  width: 100vw;
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -61,6 +60,7 @@ export const AboutSection = styled.div`
 
     img {
       height: 350px;
+      border-radius: 32px;
     }
   }
   .about-right {
@@ -70,6 +70,7 @@ export const AboutSection = styled.div`
       margin-top: 6px;
       height: 620px;
       width: 460px;
+      border-radius: 32px;
     }
   }
 `
@@ -78,7 +79,6 @@ export const TitleColumn = styled.section`
 
   h2 {
     font-size: 48px;
-    font-weight: 300;
   }
 `
 
@@ -95,6 +95,7 @@ export const CardOutdoor = styled.div`
 
     picture img {
       height: 350px;
+      border-radius: 32px;
     }
   }
 `
@@ -104,7 +105,6 @@ export const ResortText = styled.section`
 
   h2 {
     font-size: 48px;
-    font-weight: 300;
   }
 
   .arrows {
@@ -123,6 +123,7 @@ export const ResortCards = styled.div`
 
   picture img {
     width: 400px;
+    border-radius: 32px;
   }
 `
 
@@ -131,11 +132,18 @@ export const HotelCards = styled.div`
   justify-content: space-between;
 
   .cards-hotel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 500px;
+
     picture img {
-      width: 550px;
+      width: 100%;
+      border-radius: 32px;
     }
+
     h3 {
-      gap: 24px;
+      font-size: 24px;
     }
   }
 `
@@ -160,7 +168,6 @@ export const SubscribeSection = styled.section`
 
     h3 {
       font-size: 48px;
-      font-weight: 300;
     }
   }
 
@@ -174,17 +181,24 @@ export const SubscribeSection = styled.section`
 
       height: 48px;
       width: 700px;
+
+      background-color: rgba(136, 138, 138, 0.1);
+
+      border: none;
+      outline: none;
+
+      padding: 16px;
     }
+
     button {
       display: flex;
       justify-content: center;
       align-items: center;
 
       background-color: ${({ theme }) => theme.colors.white};
-      color: black;
 
       border: none;
-
+      outline: none;
       width: 200px;
     }
   }

@@ -28,4 +28,5 @@ export const ButtonLearnMoreStyled = styled(ButtonStyled)`
   background-color: ${({ theme }) => theme.colors.blue.primary};
   color: ${({ theme }) => theme.colors.white};
   margin-top: 12px;
+  border-radius: 12px;
 `
