@@ -15,8 +15,14 @@ import { ButtonLearnMore } from './components/Button'
 import imgLeft from './assets/about-left.jpg'
 import imgRight from './assets/about-right.jpg'
 import Card1 from './assets/card-1.jpg'
-import ResortImg from './assets/resort1.jpg'
+import Card2 from './assets/card-2.jpg'
+import Card3 from './assets/card-3.jpg'
+import Card4 from './assets/card-4.jpg'
+import ResortImg1 from './assets/resort1.jpg'
+import ResortImg2 from './assets/resort2.jpg'
+import ResortImg3 from './assets/resort3.jpg'
 import HotelImg from './assets/resort-1.jpg'
+import HotelImg2 from './assets/resort-2.jpg'
 
 export const App = () => {
   return (
@@ -91,9 +97,9 @@ export const App = () => {
           </div>
           <div className="card">
             <picture>
-              <img src={Card1} alt="" />
+              <img src={Card2} alt="" />
             </picture>
-            <h2>CHIANG MAI</h2>
+            <h2>BANGKOK</h2>
             <p>
               Chiang Mai Is A Vibrant City That Offers <br />
               A Unique Blend Of Ancient Culture And <br />
@@ -102,9 +108,9 @@ export const App = () => {
           </div>
           <div className="card">
             <picture>
-              <img src={Card1} alt="" />
+              <img src={Card3} alt="" />
             </picture>
-            <h2>CHIANG MAI</h2>
+            <h2>KRABI</h2>
             <p>
               Chiang Mai Is A Vibrant City That Offers <br />
               A Unique Blend Of Ancient Culture And <br />
@@ -113,9 +119,9 @@ export const App = () => {
           </div>
           <div className="card">
             <picture>
-              <img src={Card1} alt="" />
+              <img src={Card4} alt="" />
             </picture>
-            <h2>CHIANG MAI</h2>
+            <h2>PAI</h2>
             <p>
               Chiang Mai Is A Vibrant City That Offers <br />
               A Unique Blend Of Ancient Culture And <br />
@@ -134,13 +140,13 @@ export const App = () => {
       <Wrapper>
         <ResortCards>
           <picture>
-            <img src={ResortImg} alt="" />
+            <img src={ResortImg1} alt="" />
           </picture>
           <picture>
-            <img src={ResortImg} alt="" />
+            <img src={ResortImg2} alt="" />
           </picture>
           <picture>
-            <img src={ResortImg} alt="" />
+            <img src={ResortImg3} alt="" />
           </picture>
         </ResortCards>
       </Wrapper>
@@ -166,7 +172,7 @@ export const App = () => {
           </div>
           <div className="cards-hotel">
             <picture>
-              <img src={HotelImg} alt="" />
+              <img src={HotelImg2} alt="" />
             </picture>
             <h3>Discovering The Best Street Food In Bangkok</h3>
             <p>
