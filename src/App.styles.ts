@@ -71,6 +71,10 @@ export const AboutSection = styled.div`
       height: 620px;
       width: 460px;
       border-radius: 32px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 `
@@ -79,6 +83,9 @@ export const TitleColumn = styled.section`
 
   h2 {
     font-size: 48px;
+    @media screen and (max-width: 768px) {
+      display: flex;
+    }
   }
 `
 
@@ -87,6 +94,13 @@ export const CardOutdoor = styled.div`
   justify-content: space-between;
 
   margin-top: 24px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
   .card {
     display: flex;
     flex-direction: column;
@@ -112,6 +126,10 @@ export const ResortText = styled.section`
     justify-content: space-between;
     gap: 12px;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `
 export const ResortCards = styled.div`
@@ -120,6 +138,12 @@ export const ResortCards = styled.div`
   align-items: center;
 
   margin-bottom: 96px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    gap: 36px;
+  }
 
   picture img {
     width: 400px;
@@ -131,6 +155,13 @@ export const HotelCards = styled.div`
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    gap: 36px;
+  }
+
   .cards-hotel {
     display: flex;
     flex-direction: column;
@@ -138,7 +169,7 @@ export const HotelCards = styled.div`
     width: 500px;
 
     picture img {
-      width: 100%;
+      width: 400px;
       border-radius: 32px;
     }
 

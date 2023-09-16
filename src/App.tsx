@@ -1,4 +1,5 @@
 import { Header } from './components/Header'
+import { MobileHeader } from './components/HeaderMobile'
 import {
   Wrapper,
   Hero,
@@ -24,6 +25,7 @@ export const App = () => {
       <Hero>
         <Wrapper>
           <Header />
+          <MobileHeader />
         </Wrapper>
         <div className="hero-content">
           <h1>
