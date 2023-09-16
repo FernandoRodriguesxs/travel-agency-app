@@ -19,7 +19,6 @@ export const Hero = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     margin-top: 128px;
 
     gap: 12px;
@@ -30,6 +29,8 @@ export const Hero = styled.div`
 
     p {
       font-size: 16px;
+      max-inline-size: 600px;
+      padding: 12px;
     }
   }
 `
@@ -39,10 +40,11 @@ export const Wrapper = styled.div`
   padding: 24px;
   margin: 0 auto;
 `
+
 export const AboutSection = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
+  margin-top: 64px;
 
   .about-left {
     display: flex;
@@ -61,8 +63,13 @@ export const AboutSection = styled.div`
     img {
       height: 350px;
       border-radius: 32px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 250px;
+      }
     }
   }
+
   .about-right {
     display: flex;
 
@@ -78,13 +85,16 @@ export const AboutSection = styled.div`
     }
   }
 `
+
 export const TitleColumn = styled.section`
   display: flex;
+  margin-top: 64px;
 
   h2 {
     font-size: 48px;
     @media screen and (max-width: 768px) {
       display: flex;
+      font-size: 24px;
     }
   }
 `
@@ -94,12 +104,12 @@ export const CardOutdoor = styled.div`
   justify-content: space-between;
 
   margin-top: 24px;
+  gap: 36px;
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
   }
   .card {
     display: flex;
@@ -109,67 +119,67 @@ export const CardOutdoor = styled.div`
 
     picture img {
       height: 350px;
+      width: 100%;
       border-radius: 32px;
     }
   }
 `
+
 export const ResortText = styled.section`
   display: flex;
   justify-content: space-between;
+  margin-top: 64px;
 
   h2 {
     font-size: 48px;
   }
-
-  .arrows {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    align-items: center;
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-  }
 `
+
 export const ResortCards = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 36px;
 
   margin-bottom: 96px;
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
 
-    gap: 36px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
   }
 
   picture img {
     width: 400px;
     border-radius: 32px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 `
 
 export const HotelCards = styled.div`
   display: flex;
   justify-content: space-between;
+  gap: 36px;
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-
-    gap: 36px;
   }
 
   .cards-hotel {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 500px;
+    width: 600px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
 
     picture img {
-      width: 400px;
+      width: 100%;
       border-radius: 32px;
     }
 
@@ -185,35 +195,51 @@ export const SubscribeSection = styled.section`
   flex-direction: column;
   align-items: center;
 
-  height: 400px;
+  height: 600px;
+
+  padding: 12px;
+  gap: 32px;
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../src/assets/balao2.jpg') no-repeat;
   background-size: cover;
+  background-position: bottom;
 
-  margin-top: 96px;
+  margin-top: 64px;
 
   .text-sub {
     color: ${({ theme }) => theme.colors.white};
 
     h3 {
       font-size: 48px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+        text-align: center;
+      }
     }
   }
 
   .newsletter {
     display: flex;
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
 
     input {
       display: flex;
       align-items: center;
 
       height: 48px;
-      width: 700px;
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        width: auto;
+      }
 
       background-color: rgba(136, 138, 138, 0.1);
+      caret-color: white;
+      color: white;
 
       border: none;
       outline: none;
@@ -230,7 +256,8 @@ export const SubscribeSection = styled.section`
 
       border: none;
       outline: none;
-      width: 200px;
+
+      padding: 12px 24px;
     }
   }
 `

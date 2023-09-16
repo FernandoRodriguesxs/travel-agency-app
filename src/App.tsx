@@ -17,7 +17,6 @@ import imgRight from './assets/about-right.jpg'
 import Card1 from './assets/card-1.jpg'
 import ResortImg from './assets/resort1.jpg'
 import HotelImg from './assets/resort-1.jpg'
-import { ArrowRight, ArrowLeft } from '@phosphor-icons/react'
 
 export const App = () => {
   return (
@@ -34,9 +33,8 @@ export const App = () => {
             TO SCUBA DIVING
           </h1>
           <p>
-            Experience The Beauty And Diversity Of Thailand Culture
-            <br />
-            Nature, And People Through Our Expertly Curated Travel <br />
+            Experience The Beauty And Diversity Of Thailand Culture Nature, And
+            People Through Our Expertly Curated Travel <br />
             Packages
           </p>
           <ButtonLearnMore>Learn More</ButtonLearnMore>
@@ -128,11 +126,9 @@ export const App = () => {
       </Wrapper>
       <Wrapper>
         <ResortText>
-          <h2>Top 10 Resorts</h2>
-          <div className="arrows">
-            <ArrowLeft size={32} color="#000000" />
-            <ArrowRight size={32} color="#000000" />
-          </div>
+          <TitleColumn>
+            <h2>Top 10 Resorts</h2>
+          </TitleColumn>
         </ResortText>
       </Wrapper>
       <Wrapper>
