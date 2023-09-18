@@ -9,7 +9,7 @@ export const Hero = styled.div`
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../src/assets/hero-img.jpg') no-repeat;
+    url('../../src/assets/hero-img.jpg') no-repeat;
   background-size: cover;
 
   color: ${({ theme }) => theme.colors.white};
@@ -202,7 +202,7 @@ export const SubscribeSection = styled.section`
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../src/assets/balao2.jpg') no-repeat;
+    url('../../src/assets/balao2.jpg') no-repeat;
   background-size: cover;
   background-position: bottom;
 
