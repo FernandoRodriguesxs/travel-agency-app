@@ -24,7 +24,6 @@ import ResortImg3 from './assets/resort3.jpg'
 import HotelImg from './assets/resort-1.jpg'
 import HotelImg2 from './assets/resort-2.jpg'
 import { Slide } from 'react-awesome-reveal'
-
 export const App = () => {
   return (
     <>
